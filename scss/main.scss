@@ -1,0 +1,25 @@
+// Spacing unit
+
+$spacing-unit:     40px;
+
+// Width of the content area
+
+$content-width:    1200px;
+$on-very-large:    1500px;
+$on-large:         1100px;
+$on-laptop:         950px;
+$on-palm:           700px;
+$on-phone:			600px;
+$small:				450px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import "font";
+@import "bootstrap/bootstrap";
+@import "variables";
+@import "layout";
+
