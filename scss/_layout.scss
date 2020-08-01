@@ -231,6 +231,14 @@ header {
 
 // General
 
+a {
+    color: $secondary;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
 section p {
     color: $white;
 }
@@ -238,6 +246,19 @@ section p {
 .header-section {
     color: $secondary;
     font-weight: 800;
+}
+
+@media (max-width: 992px) {
+    .header-section {
+        margin-top: 20px;
+    }
+}
+
+.top-line {
+    background-image: url("../assets/img/dashes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .image-border {
@@ -337,7 +358,6 @@ hr {
         clip-path: none;
     }
 }
-
 
 // Footer
 footer {
